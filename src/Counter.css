@@ -1,0 +1,131 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef); /* Subtle gradient background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+/* App Container */
+.app {
+  text-align: center;
+  background: linear-gradient(135deg, #ffffff, #f7f7f7); /* Soft gradient for the container */
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #4a4a4a;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Counter Styles */
+.counter {
+  text-align: center;
+}
+
+.count-display {
+  font-size: 2rem;
+  color: #495057;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Vibrant gradient text background */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 2px solid #2575fc;
+  border-radius: 8px;
+  display: inline-block;
+  animation: pulse 1.2s infinite;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Increment Button */
+.increment {
+  background: linear-gradient(135deg, #00c851, #007e33); /* Vibrant green */
+  color: #fff;
+}
+
+.increment:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 200, 81, 0.5); /* Green glow */
+}
+
+/* Decrement Button */
+.decrement {
+  background: linear-gradient(135deg, #ff4444, #cc0000); /* Vibrant red */
+  color: #fff;
+}
+
+.decrement:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(255, 68, 68, 0.5); /* Red glow */
+}
+
+/* Reset Button */
+.reset {
+  background: linear-gradient(135deg, #ffbb33, #ff8800); /* Vibrant orange */
+  color: #fff;
+}
+
+.reset:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(255, 187, 51, 0.5); /* Orange glow */
+}
+
+/* Active Button State */
+.btn:active {
+  transform: scale(0.95);
+}
